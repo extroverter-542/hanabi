@@ -32,10 +32,10 @@ DB_URI = "mongodb+srv://sagatobots00001:sagatobots100@cluster00001.vgdshkw.mongo
 DB_NAME = os.environ.get("DATABASE_NAME", "Straw_Hat_Database")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "133321f1b1f9a656c89e55fcf7ee301c37ee3835")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "c7ae3c29efbab4c6906c32f48946fdbcaa9aa202")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","Straw_Hat_Bots")
+TUT_VID = os.environ.get("TUT_VID","sotutorials")
 
 
 #force sub channel id, if you want enable force sub
