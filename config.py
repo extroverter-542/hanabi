@@ -32,7 +32,7 @@ DB_URI = "mongodb+srv://sagatobots00001:sagatobots100@cluster00001.vgdshkw.mongo
 DB_NAME = os.environ.get("DATABASE_NAME", "Straw_Hat_Database")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "c7ae3c29efbab4c6906c32f48946fdbcaa9aa202")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "cc1760c773e63f33a83cf1420566efa4deea11ff")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","sotutorials")
