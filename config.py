@@ -13,16 +13,16 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "28525384"))
+APP_ID = int(os.environ.get("APP_ID", "27390437"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "3a1190585fe5bf1f6324be87ba5b68c6")
+API_HASH = os.environ.get("API_HASH", "8dcef0252047d3a4556ad80280db4146")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001985214229"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002105960946"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1418213560"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6727550037"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -32,14 +32,14 @@ DB_URI = "mongodb+srv://sagatobots00001:sagatobots100@cluster00001.vgdshkw.mongo
 DB_NAME = os.environ.get("DATABASE_NAME", "Straw_Hat_Database")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "cc1760c773e63f33a83cf1420566efa4deea11ff")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "133321f1b1f9a656c89e55fcf7ee301c37ee3835")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","sotutorials")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002037398576"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002051024022"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -47,7 +47,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {mention}⚡\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.\n\n𝐃ᴇᴠᴇʟᴏᴘᴇᴅ 𝐁ʏ : <a href='https://t.me/Straw_Hat_Bots'>𝐒ᴛʀᴀᴡ 𝐇ᴀᴛ ꭙ 𝐁ᴏᴛs</a></b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6727550037 7162615398 5261438298").split()):
+    for x in (os.environ.get("ADMINS", "6727550037 7162615398 5660025305").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
