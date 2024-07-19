@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7285396752:AAHD99o9IM9lbKesItgUHGmh5qgbIoOGKAE")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "27390437"))
@@ -35,7 +35,7 @@ SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "133321f1b1f9a656c89e55fcf7ee301c37ee3835")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","sotutorials")
+TUT_VID = os.environ.get("TUT_VID","The_Hentai_Society")
 
 
 #force sub channel id, if you want enable force sub
