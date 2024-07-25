@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7200375716:AAG2gBCQCR9WRakFsBKXmZlMhcE-htgz3CQ")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7259928141:AAH8RzgQLhQPsY_F-bd-qBxP0URp8a8OXpg")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26933074"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "26933074"))
 API_HASH = os.environ.get("API_HASH", "08c81c40123e0b7252fa9e3540b5682a")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002100970162"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002176239628"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "6498155781"))
@@ -29,7 +29,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = "mongodb+srv://sagatobots00001:sagatobots100@cluster00001.vgdshkw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster00001"
-DB_NAME = os.environ.get("DATABASE_NAME", "luffy_token")
+DB_NAME = os.environ.get("DATABASE_NAME", "Rengoku_token")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "14b639bfcdab3e37710de9d2a23aaddd6ab3eb35")
