@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "28525384"))
 API_HASH = os.environ.get("API_HASH", "3a1190585fe5bf1f6324be87ba5b68c6")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001985214229"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "7400335416"))
@@ -46,7 +46,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>Kᴏɴɴɪᴄʜɪᴡᴀ!! {mention}⚡\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.\n\n𝐃ᴇᴠᴇʟᴏᴘᴇᴅ 𝐁ʏ : <a href='https://t.me/Straw_Hat_Bots'>𝐒ᴛʀᴀᴡ 𝐇ᴀᴛ ꭙ 𝐁ᴏᴛs</a></b>")
 try:
-    ADMINS=[]
+    ADMINS=[6727550037]
     for x in (os.environ.get("ADMINS", "6727550037 7162615398 1418213560 5261438298").split()):
         ADMINS.append(int(x))
 except ValueError:
