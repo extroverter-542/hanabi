@@ -1,19 +1,18 @@
 git+https://github.com/youesky/pyrogram
 # --- For-Bot-Working --------- #
-pyrogram==2.0.106
-TgCrypto==1.2.5
-pyromod==3.1.6
+TgCrypto
+pyromod
 # --- For-Database ------------ #
-pymongo==4.8.0
-motor==3.5.1
+pymongo
+motor
 umongo
-dnspython==2.6.1
+dnspython
 marshmallow
 # --- For-Web-Response ------- #
-pytz==2024.1
-requests==2.32.3
-bs4==0.0.2
-shortzy==0.0.8
-aiohttp==3.10.1
-aiofiles==24.1.0
-asyncio==3.4.3
+pytz
+requests
+bs4
+shortzy
+aiohttp
+aiofiles
+asyncio
