@@ -57,11 +57,11 @@ async def start_command(client: Client, message: Message):
         if "verify_" in message.text:
             _, token = message.text.split("_", 1)
             if verify_status['verify_token'] != token:
-                return await message.reply("Your token is invalid or Expired. Try again by clicking /start")
+                return await message.reply("Yᴏᴜʀ ᴛᴏᴋᴇɴ ɪs ɪɴᴠᴀʟɪᴅ ᴏʀ Exᴘɪʀᴇᴅ. Tʀʏ ᴀɢᴀɪɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ /start")
             await update_verify_status(id, is_verified=True, verified_time=time.time())
             if verify_status["link"] == "":
                 reply_markup = None
-            await message.reply(f"Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=True, quote=True)
+            await message.reply(f"Yᴏᴜʀ ᴛᴏᴋᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ᴠᴀʟɪᴅ ғᴏʀ: 24 Hᴏᴜʀ", reply_markup=reply_markup, protect_content=True, quote=True)
 
         elif len(message.text) > 7 and verify_status['is_verified']:
             try:
@@ -91,11 +91,11 @@ async def start_command(client: Client, message: Message):
                     ids = [int(int(argument[1]) / abs(client.db_channel.id))]
                 except:
                     return
-            temp_msg = await message.reply("Please wait...")
+            temp_msg = await message.reply("Rᴜᴋ ᴊᴀᴏ Bʀᴏ/Sɪs...")
             try:
                 messages = await get_messages(client, ids)
             except:
-                await message.reply_text("Something went wrong..!")
+                await message.reply_text("Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ..!")
                 return
             await temp_msg.delete()
 
@@ -146,10 +146,10 @@ async def start_command(client: Client, message: Message):
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
                 btn = [
-                    [InlineKeyboardButton("⚠️ GENERATE NEW TOKEN ⚠️", url=link)],
-                    [InlineKeyboardButton('⚡ HOW TO USE THE BOT ⚡', url=full_tut_url)]
+                    [InlineKeyboardButton("⚠️ Gᴇɴᴇʀᴀᴛᴇ Nᴇᴡ Tᴏᴋᴇɴ ⚠️", url=link)],
+                    [InlineKeyboardButton('⚡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ⚡', url=full_tut_url)]
                 ]
-                await message.reply(f"Your Ads Token is Expired, To Generate New Token please Click on Generate New Token.\n\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nWhat is the token?\n\nThis Is An Ads token. These Ads are Display In Various Sites by Single Link (Shortner). After Watching These ads You get a Token Which are Valid For 24 Hr.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+                await message.reply(f"Yᴏᴜʀ Aᴅs Tᴏᴋᴇɴ ɪs Exᴘɪʀᴇᴅ, Tᴏ Gᴇɴᴇʀᴀᴛᴇ Nᴇᴡ Tᴏᴋᴇɴ ᴘʟᴇᴀsᴇ Cʟɪᴄᴋ ᴏɴ Gᴇɴᴇʀᴀᴛᴇ Nᴇᴡ Tᴏᴋᴇɴ.\n\nTᴏᴋᴇɴ Tɪᴍᴇᴏᴜᴛ: {get_exp_time(VERIFY_EXPIRE)}\n\nWʜᴀᴛ ɪs ᴛʜᴇ ᴛᴏᴋᴇɴ?\n\nTʜɪs Is Aɴ Aᴅs ᴛᴏᴋᴇɴ. Tʜᴇsᴇ Aᴅs ᴀʀᴇ Dɪsᴘʟᴀʏ Iɴ Vᴀʀɪᴏᴜs Sɪᴛᴇs ʙʏ Sɪɴɢʟᴇ Lɪɴᴋ (Sʜᴏʀᴛɴᴇʀ). Aғᴛᴇʀ Wᴀᴛᴄʜɪɴɢ Tʜᴇsᴇ ᴀᴅs Yᴏᴜ ɢᴇᴛ ᴀ Tᴏᴋᴇɴ Wʜɪᴄʜ ᴀʀᴇ Vᴀʟɪᴅ Fᴏʀ 24 Hʀ.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
 
 # ... (rest of the code remains unchanged))
 
@@ -217,7 +217,7 @@ async def send_text(client: Bot, message: Message):
         deleted = 0
         unsuccessful = 0
         
-        pls_wait = await message.reply("<i>Broadcasting Message.. This will Take Some Time</i>")
+        pls_wait = await message.reply("<i>Bʀᴏᴀᴅᴄᴀsᴛɪɴɢ Mᴇssᴀɢᴇ.. Tʜɪs ᴡɪʟʟ Tᴀᴋᴇ Sᴏᴍᴇ Tɪᴍᴇ</i>")
         for chat_id in query:
             try:
                 await broadcast_msg.copy(chat_id)
@@ -237,7 +237,7 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>Broadcast Completed</u>
+        status = f"""<b><u>Bʀᴏᴀᴅᴄᴀsᴛ Cᴏᴍᴘʟᴇᴛᴇᴅ</u>
 
 Total Users: <code>{total}</code>
 Successful: <code>{successful}</code>
