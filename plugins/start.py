@@ -57,7 +57,7 @@ async def start_command(client: Client, message: Message):
         if "verify_" in message.text:
             _, token = message.text.split("_", 1)
             if verify_status['verify_token'] != token:
-                return await message.reply("Yᴏᴜʀ ᴛᴏᴋᴇɴ ɪs ɪɴᴠᴀʟɪᴅ ᴏʀ Exᴘɪʀᴇᴅ. Tʀʏ ᴀɢᴀɪɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ /start\n\nHere is the solution for your problem : https://t.me/c/2190978930/23")
+                return await message.reply("Yᴏᴜʀ ᴛᴏᴋᴇɴ ɪs ɪɴᴠᴀʟɪᴅ ᴏʀ Exᴘɪʀᴇᴅ. Tʀʏ ᴀɢᴀɪɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ /start\n\nHere is the solution for your problem : https://graph.org/IMPORTANT-UPDATE-FROM-ADMIN-09-19")
             await update_verify_status(id, is_verified=True, verified_time=time.time())
             if verify_status["link"] == "":
                 reply_markup = None
@@ -171,7 +171,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "⚡ Join Backup Channel ⚡",
                 url = client.invitelink)
         ]
     ]
@@ -179,7 +179,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = '✨ Try Again ✨',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
